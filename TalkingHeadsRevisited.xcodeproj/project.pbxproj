@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2801B15D2BC73AEA00315AD0 /* TalkRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2801B15C2BC73AEA00315AD0 /* TalkRowView.swift */; };
+		2810428A2BC71C7300F7A920 /* TalkingHeadsRevisitedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281042892BC71C7300F7A920 /* TalkingHeadsRevisitedApp.swift */; };
+		2810428C2BC71C7300F7A920 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810428B2BC71C7300F7A920 /* ContentView.swift */; };
+		2810428E2BC71C7400F7A920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2810428D2BC71C7400F7A920 /* Assets.xcassets */; };
+		281042922BC71C7400F7A920 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281042912BC71C7400F7A920 /* Preview Assets.xcassets */; };
+		281042B62BC71CB400F7A920 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 281042B52BC71CB400F7A920 /* ComposableArchitecture */; };
+		281042B82BC71CDF00F7A920 /* EditTalkFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281042B72BC71CDF00F7A920 /* EditTalkFeature.swift */; };
+		281042BA2BC71D4C00F7A920 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281042B92BC71D4C00F7A920 /* Talk.swift */; };
+		281042BC2BC71E1800F7A920 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281042BB2BC71E1800F7A920 /* ScoreView.swift */; };
+		281042BE2BC720BC00F7A920 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281042BD2BC720BC00F7A920 /* Helpers.swift */; };
+		283730752BC7466D00FC1F0A /* EditTalkFeature+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283730742BC7466D00FC1F0A /* EditTalkFeature+Extensions.swift */; };
+		2864A6022BC723AE00D165AA /* TalkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864A6012BC723AE00D165AA /* TalkClient.swift */; };
+		287A08B22BC7B6280005F4E6 /* AddTalkFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287A08B12BC7B6280005F4E6 /* AddTalkFeature.swift */; };
+		289B55832BC727D10050F1D2 /* TalkListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B55822BC727D10050F1D2 /* TalkListFeature.swift */; };
+		28B221DF2BC807AC00C28336 /* TaskListFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B221DE2BC807AC00C28336 /* TaskListFeatureTests.swift */; };
+		28B221E12BC8145900C28336 /* AddTalkFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B221E02BC8145900C28336 /* AddTalkFeatureTests.swift */; };
+		28B221E32BC8163100C28336 /* EditTalkFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B221E22BC8163100C28336 /* EditTalkFeatureTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		281042982BC71C7400F7A920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2810427E2BC71C7300F7A920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 281042852BC71C7300F7A920;
+			remoteInfo = TalkingHeadsRevisited;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2801B15C2BC73AEA00315AD0 /* TalkRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkRowView.swift; sourceTree = "<group>"; };
+		281042862BC71C7300F7A920 /* TalkingHeadsRevisited.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkingHeadsRevisited.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		281042892BC71C7300F7A920 /* TalkingHeadsRevisitedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkingHeadsRevisitedApp.swift; sourceTree = "<group>"; };
+		2810428B2BC71C7300F7A920 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2810428D2BC71C7400F7A920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2810428F2BC71C7400F7A920 /* TalkingHeadsRevisited.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TalkingHeadsRevisited.entitlements; sourceTree = "<group>"; };
+		281042912BC71C7400F7A920 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		281042972BC71C7400F7A920 /* TalkingHeadsRevisitedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkingHeadsRevisitedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		281042B72BC71CDF00F7A920 /* EditTalkFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTalkFeature.swift; sourceTree = "<group>"; };
+		281042B92BC71D4C00F7A920 /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		281042BB2BC71E1800F7A920 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		281042BD2BC720BC00F7A920 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		283730742BC7466D00FC1F0A /* EditTalkFeature+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditTalkFeature+Extensions.swift"; sourceTree = "<group>"; };
+		2864A6012BC723AE00D165AA /* TalkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkClient.swift; sourceTree = "<group>"; };
+		287A08B12BC7B6280005F4E6 /* AddTalkFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTalkFeature.swift; sourceTree = "<group>"; };
+		289B55822BC727D10050F1D2 /* TalkListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkListFeature.swift; sourceTree = "<group>"; };
+		28B221DE2BC807AC00C28336 /* TaskListFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListFeatureTests.swift; sourceTree = "<group>"; };
+		28B221E02BC8145900C28336 /* AddTalkFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTalkFeatureTests.swift; sourceTree = "<group>"; };
+		28B221E22BC8163100C28336 /* EditTalkFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTalkFeatureTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		281042832BC71C7300F7A920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281042B62BC71CB400F7A920 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281042942BC71C7400F7A920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2810427D2BC71C7300F7A920 = {
+			isa = PBXGroup;
+			children = (
+				281042882BC71C7300F7A920 /* TalkingHeadsRevisited */,
+				2810429A2BC71C7400F7A920 /* TalkingHeadsRevisitedTests */,
+				281042872BC71C7300F7A920 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		281042872BC71C7300F7A920 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				281042862BC71C7300F7A920 /* TalkingHeadsRevisited.app */,
+				281042972BC71C7400F7A920 /* TalkingHeadsRevisitedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		281042882BC71C7300F7A920 /* TalkingHeadsRevisited */ = {
+			isa = PBXGroup;
+			children = (
+				2810428F2BC71C7400F7A920 /* TalkingHeadsRevisited.entitlements */,
+				287A08B12BC7B6280005F4E6 /* AddTalkFeature.swift */,
+				2810428B2BC71C7300F7A920 /* ContentView.swift */,
+				281042B72BC71CDF00F7A920 /* EditTalkFeature.swift */,
+				283730742BC7466D00FC1F0A /* EditTalkFeature+Extensions.swift */,
+				281042BD2BC720BC00F7A920 /* Helpers.swift */,
+				281042BB2BC71E1800F7A920 /* ScoreView.swift */,
+				281042B92BC71D4C00F7A920 /* Talk.swift */,
+				2864A6012BC723AE00D165AA /* TalkClient.swift */,
+				281042892BC71C7300F7A920 /* TalkingHeadsRevisitedApp.swift */,
+				289B55822BC727D10050F1D2 /* TalkListFeature.swift */,
+				2801B15C2BC73AEA00315AD0 /* TalkRowView.swift */,
+				2810428D2BC71C7400F7A920 /* Assets.xcassets */,
+				281042902BC71C7400F7A920 /* Preview Content */,
+			);
+			path = TalkingHeadsRevisited;
+			sourceTree = "<group>";
+		};
+		281042902BC71C7400F7A920 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				281042912BC71C7400F7A920 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2810429A2BC71C7400F7A920 /* TalkingHeadsRevisitedTests */ = {
+			isa = PBXGroup;
+			children = (
+				28B221E02BC8145900C28336 /* AddTalkFeatureTests.swift */,
+				28B221DE2BC807AC00C28336 /* TaskListFeatureTests.swift */,
+				28B221E22BC8163100C28336 /* EditTalkFeatureTests.swift */,
+			);
+			path = TalkingHeadsRevisitedTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		281042852BC71C7300F7A920 /* TalkingHeadsRevisited */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281042AB2BC71C7400F7A920 /* Build configuration list for PBXNativeTarget "TalkingHeadsRevisited" */;
+			buildPhases = (
+				281042822BC71C7300F7A920 /* Sources */,
+				281042832BC71C7300F7A920 /* Frameworks */,
+				281042842BC71C7300F7A920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkingHeadsRevisited;
+			packageProductDependencies = (
+				281042B52BC71CB400F7A920 /* ComposableArchitecture */,
+			);
+			productName = TalkingHeadsRevisited;
+			productReference = 281042862BC71C7300F7A920 /* TalkingHeadsRevisited.app */;
+			productType = "com.apple.product-type.application";
+		};
+		281042962BC71C7400F7A920 /* TalkingHeadsRevisitedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281042AE2BC71C7400F7A920 /* Build configuration list for PBXNativeTarget "TalkingHeadsRevisitedTests" */;
+			buildPhases = (
+				281042932BC71C7400F7A920 /* Sources */,
+				281042942BC71C7400F7A920 /* Frameworks */,
+				281042952BC71C7400F7A920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				281042992BC71C7400F7A920 /* PBXTargetDependency */,
+			);
+			name = TalkingHeadsRevisitedTests;
+			productName = TalkingHeadsRevisitedTests;
+			productReference = 281042972BC71C7400F7A920 /* TalkingHeadsRevisitedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2810427E2BC71C7300F7A920 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					281042852BC71C7300F7A920 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					281042962BC71C7400F7A920 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 281042852BC71C7300F7A920;
+					};
+				};
+			};
+			buildConfigurationList = 281042812BC71C7300F7A920 /* Build configuration list for PBXProject "TalkingHeadsRevisited" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2810427D2BC71C7300F7A920;
+			packageReferences = (
+				281042B42BC71CB400F7A920 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 281042872BC71C7300F7A920 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				281042852BC71C7300F7A920 /* TalkingHeadsRevisited */,
+				281042962BC71C7400F7A920 /* TalkingHeadsRevisitedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		281042842BC71C7300F7A920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281042922BC71C7400F7A920 /* Preview Assets.xcassets in Resources */,
+				2810428E2BC71C7400F7A920 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281042952BC71C7400F7A920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		281042822BC71C7300F7A920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283730752BC7466D00FC1F0A /* EditTalkFeature+Extensions.swift in Sources */,
+				2810428C2BC71C7300F7A920 /* ContentView.swift in Sources */,
+				2801B15D2BC73AEA00315AD0 /* TalkRowView.swift in Sources */,
+				281042BA2BC71D4C00F7A920 /* Talk.swift in Sources */,
+				287A08B22BC7B6280005F4E6 /* AddTalkFeature.swift in Sources */,
+				2810428A2BC71C7300F7A920 /* TalkingHeadsRevisitedApp.swift in Sources */,
+				2864A6022BC723AE00D165AA /* TalkClient.swift in Sources */,
+				289B55832BC727D10050F1D2 /* TalkListFeature.swift in Sources */,
+				281042B82BC71CDF00F7A920 /* EditTalkFeature.swift in Sources */,
+				281042BE2BC720BC00F7A920 /* Helpers.swift in Sources */,
+				281042BC2BC71E1800F7A920 /* ScoreView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		281042932BC71C7400F7A920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B221E32BC8163100C28336 /* EditTalkFeatureTests.swift in Sources */,
+				28B221E12BC8145900C28336 /* AddTalkFeatureTests.swift in Sources */,
+				28B221DF2BC807AC00C28336 /* TaskListFeatureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		281042992BC71C7400F7A920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 281042852BC71C7300F7A920 /* TalkingHeadsRevisited */;
+			targetProxy = 281042982BC71C7400F7A920 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		281042A92BC71C7400F7A920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		281042AA2BC71C7400F7A920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		281042AC2BC71C7400F7A920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TalkingHeadsRevisited/TalkingHeadsRevisited.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TalkingHeadsRevisited/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoaheads.le.TalkingHeadsRevisited;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		281042AD2BC71C7400F7A920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TalkingHeadsRevisited/TalkingHeadsRevisited.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TalkingHeadsRevisited/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoaheads.le.TalkingHeadsRevisited;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		281042AF2BC71C7400F7A920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoaheads.le.TalkingHeadsRevisitedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkingHeadsRevisited.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TalkingHeadsRevisited";
+			};
+			name = Debug;
+		};
+		281042B02BC71C7400F7A920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoaheads.le.TalkingHeadsRevisitedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkingHeadsRevisited.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TalkingHeadsRevisited";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		281042812BC71C7300F7A920 /* Build configuration list for PBXProject "TalkingHeadsRevisited" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281042A92BC71C7400F7A920 /* Debug */,
+				281042AA2BC71C7400F7A920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		281042AB2BC71C7400F7A920 /* Build configuration list for PBXNativeTarget "TalkingHeadsRevisited" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281042AC2BC71C7400F7A920 /* Debug */,
+				281042AD2BC71C7400F7A920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		281042AE2BC71C7400F7A920 /* Build configuration list for PBXNativeTarget "TalkingHeadsRevisitedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281042AF2BC71C7400F7A920 /* Debug */,
+				281042B02BC71C7400F7A920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		281042B42BC71CB400F7A920 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		281042B52BC71CB400F7A920 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 281042B42BC71CB400F7A920 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2810427E2BC71C7300F7A920 /* Project object */;
+}
